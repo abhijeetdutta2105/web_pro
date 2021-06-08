@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codecademy Project</title>
+  </head>
+  <body text="blue" background="https://i.pinimg.com/736x/e3/e7/d8/e3e7d871074c2b2256207b23a4eaeca4.jpg">
+  
+    <center><h1>Project on Front-end Web Development</h1></center>
+    <h2>Name: Abhijeet Dutta</h2>
+    <h2>Registration Number: 20BCE10985</h2>
+    <hr color="red" width="700 px" size="4 px"
+    <div>
+        <font size=5>
+        <center><form> 
+        <h2> <center><u>Welcome Form</u> </center></h2>
+        <label type="text">Name*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" style="font-size: 12;" required><br><br>
+        <label type="text">Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+     <input type="number"><br><br>
+        <label type="text">Date of Birth:&nbsp;</label>
+       <input type="date"style="font-size: 12;" placeholder="dd-mm-yyyy"> <br><br>
+        <label type="text">Password*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+        <input type="password" style="font-size: 12;" placeholder="Strong password" required><br><br>
+        <label type="text">Most fav domain*: </label><br>
+        
+           <select name="domain" id="domain" required>
+            <option style="font-size: 12;" value="">--Select an option--</option>
+            <option style="font-size: 12;" value="Block chain tech">Block chain tech</option>
+            <option style="font-size: 12;" value="Data Science">Data Science</option>
+            <option style="font-size: 12;" value="Web Development">Web Development</option>
+            <option style="font-size: 12;" value="Android Development">Android Development</option>
+            <option style="font-size: 12;" value="AR-VR">AR-VR</option>
+        </select><br><br>
+        <button type="reset">RESET</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="submit">SUBMIT
+            <script>
+                alert("You have submitted the form. Thanks for the time");
+            </script>
+        </button>
+        
+    </form></center></font>
+</div>  
+      
+        <h2>Let's Play a Number Guessing Game</h2>
+        <script>
+            function guessNumber()
+            {
+                //generates a random number from 1 to 10
+                const random=Math.floor(Math.random()*10)+1;
+
+                //take user input
+                let number=parseInt(prompt("Guess a number from 1 to 10"));
+
+                //counter
+                counter=1;
+                
+                //take input until the guess is correct
+                
+                while(number!==random)
+                {
+                    number=parseInt(prompt("Guess a number from 1 to 10"));
+                    counter=counter+1;
+                }
+
+                //check if guess is correct
+                if(number==random)
+                {
+                    alert("You guessed the number correctly");
+                    
+                }
+                console.log("The number was ",number);
+                console.log("The number of trials you had " ,counter);
+            }
+        </script>
+        <center> <button onclick="guessNumber()">Let's Go</button></center>
+    <center><h2>Open console window on side and Do click on Thank you button at the end</h2></center> 
+    <h3> Thank you page may take time to load</h3>
+    <center><a href="another.html" target="_blank" > <button >Thank you</button></a></center>
+  </body>
+</html>
